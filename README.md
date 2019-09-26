@@ -27,7 +27,7 @@ GET - https://6adljcu9ya.execute-api.ap-southeast-1.amazonaws.com/dev/movies?dat
 #The format of date is ISO such as 2019-09-18
 #res = all movie which release on the week which the date in
 
-PUT(Update) - https://6sz0uw2lzl.execute-api.ap-southeast-1.amazonaws.com/dev/movies/{id}
+PUT(Update) - https://6adljcu9ya.execute-api.ap-southeast-1.amazonaws.com/dev/movies/{id}
 
 req.body = {
 any property you want to change : value
