@@ -28,7 +28,7 @@ module.exports.get = async event => {
       statusCode: 200,
       body: JSON.stringify(
         {
-          matter: result.Items
+          movies: result.Items
         },
         null,
         2

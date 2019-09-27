@@ -37,7 +37,7 @@ module.exports.update = async event => {
         body: JSON.stringify(
           {
             message: "update successfully!",
-            matters: result
+            movie: result
           },
           null,
           2

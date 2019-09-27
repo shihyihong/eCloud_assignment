@@ -17,11 +17,13 @@ module.exports.insert = async event => {
     const params = {
       TableName: process.env.DYNAMODB_TABLE
     };
+    let result = await dynamoDb.scan(params).promise();
     return {
       statusCode: 200,
       body: JSON.stringify(
         {
-          message: "successfully insert"
+          message: "successfully insert",
+          movies: result.Items
         },
         null,
         2
